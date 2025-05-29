@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Smart-City-Multidimensional-Planning'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.citizen-experience]
+path = 'contracts/citizen-experience.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.dimensional-modeling]
+path = 'contracts/dimensional-modeling.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
